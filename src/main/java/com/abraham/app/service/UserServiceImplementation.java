@@ -50,5 +50,12 @@ public class UserServiceImplementation implements UserService{
 		userRepository.deleteById(id);
 		
 	}
+
+	@Override
+	@Transactional
+	public User save(Iterable<User> users) {
+		userRepository.saveAll(users);
+		return null;
+	}
 	
 }

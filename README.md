@@ -5,7 +5,7 @@
 *La copia de datos de la BD está en la carpeta /resources de esta branch. *
 
 
-En el archivo application.properties que se encuentra en la carpeta resources debe cambiar las credenciales por las credenciales de sus BD:
+En el archivo application.properties que se encuentra en la carpeta /resources debe cambiar las credenciales por las credenciales de sus BD:
 
 
     spring.datasource.url=jdbc:mysql://localhost:3306/db_bg?useSSL=false&serverTimezone=America/Panama

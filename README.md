@@ -5,6 +5,21 @@
 *La copia de datos de la BD está en la carpeta /resources de esta branch. *
 
 
+En el archivo application.properties que se encuentra en la carpeta resources debe cambiar las credenciales por las credenciales de sus BD:
+
+
+    spring.datasource.url=jdbc:mysql://localhost:3306/db_bg?useSSL=false&serverTimezone=America/Panama
+    spring.datasource.username=bg
+    spring.datasource.password=retobg2020
+    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+    spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+    spring.jpa.show-sql=true
+    spring.jpa.hibernate.ddl-auto=update
+    logging.level.org.hibernate.SQL=debug
+
+ 
+
+
 # CRUD
 
 ## Leer todos los usuarios

@@ -9,30 +9,31 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.abraham.app.entity.User;
+
 import com.abraham.app.repository.UserRepository;
 
 @Service
-public class UserServiceImplementation implements UserService{
+public class UserServiceImplementation implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@Override
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	public Iterable<User> findAll() {
-		
+
 		return userRepository.findAll();
 	}
 
 	@Override
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	public Page<User> findAll(Pageable pageable) {
-		
+
 		return userRepository.findAll(pageable);
 	}
 
 	@Override
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	public Optional<User> findById(Long id) {
 		return userRepository.findById(id);
 	}
@@ -41,14 +42,14 @@ public class UserServiceImplementation implements UserService{
 	@Transactional()
 	public User save(User user) {
 		return userRepository.save(user);
-		
+
 	}
 
 	@Override
 	@Transactional
 	public void deleteById(Long id) {
 		userRepository.deleteById(id);
-		
+
 	}
 
 	@Override
@@ -57,5 +58,5 @@ public class UserServiceImplementation implements UserService{
 		userRepository.saveAll(users);
 		return null;
 	}
-	
+
 }

@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="geo_codes")
+@Table(name = "geo_codes")
 public class GeoCode implements Serializable {
 
 	/**
@@ -21,29 +21,29 @@ public class GeoCode implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(length = 20,nullable=false)
+
+	@Column(length = 20, nullable = false)
 	private String lat;
 	private String lng;
-	
-	
 
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getLat() {
 		return lat;
 	}
+
 	public void setLat(String lat) {
 		this.lat = lat;
 	}
+
 	public String getLng() {
 		return lng;
 	}
+
 	public void setLng(String lng) {
 		this.lng = lng;
 	}
-	
-	
 
 }

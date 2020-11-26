@@ -13,9 +13,9 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
-public class User implements Serializable{
-	
+@Table(name = "users")
+public class User implements Serializable {
+
 	/**
 	 * 
 	 */
@@ -24,24 +24,24 @@ public class User implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(length = 50,nullable=false)
+
+	@Column(length = 50, nullable = false)
 	private String name;
 	private String username;
-	
-	@Column(nullable=false,length=50,unique=true)
+
+	@Column(nullable = false, length = 50, unique = true)
 	private String email;
-	
-	@OneToOne(cascade= {CascadeType.ALL})
-    @JoinColumn(name = "address_id")
+
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "address_id")
 	private Address address;
-	
-	@Column(nullable=false,length=50,unique=true)
+
+	@Column(nullable = false, length = 50, unique = true)
 	private String phone;
 	private String website;
-	
-	@OneToOne(cascade= {CascadeType.ALL})
-    @JoinColumn(name = "company_id")
+
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "company_id")
 	private Company company;
 
 	public Long getId() {
@@ -108,5 +108,4 @@ public class User implements Serializable{
 		this.company = company;
 	}
 
-	
 }

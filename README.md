@@ -1,7 +1,7 @@
 # RetoBG con JWT
 
 Me tome el tiempo de mejorar la seguridad de la API con JWT.
-*Solo se puede usar con un software cómo Postman *
+*Solo se puede usar con un software de API testing como Postman *
 
 Para hacer login deber acceder a:
 
@@ -76,7 +76,7 @@ En el **Header** de la petición debe ir su token JWT de esta forma:
 
     Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdWRvbnltIiwiaWF0IjoxNjA2MzgyNDIwLCJleHAiOjE2MDY0MTg0MjB9.qc3D5HfbWkdQyqy_ULD6cZ8WA9gBrVgSKtbVYoQvkCpU045hUtnFrh6PiR0Hl4RoO6sDek68Qygx4UOwmXidNw
 
-Ejemplo en postman:
+Ejemplo en postman
 ![enter image description here](https://i.ibb.co/rQzC0sX/Screenshot-from-2020-11-26-04-54-52.png)
 
 

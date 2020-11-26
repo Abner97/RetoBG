@@ -13,9 +13,9 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="addresses")
+@Table(name = "addresses")
 public class Address implements Serializable {
-	
+
 	/**
 	 * 
 	 */
@@ -24,58 +24,64 @@ public class Address implements Serializable {
 	/**
 	 * 
 	 */
-	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(length = 50,nullable=false)
+
+	@Column(length = 50, nullable = false)
 	private String street;
 	private String suite;
 	private String city;
-	@Column(length = 50,nullable=true)
+	@Column(length = 50, nullable = true)
 	private String zipcode;
-	
-	@OneToOne(cascade= {CascadeType.ALL})
-    @JoinColumn(name = "geo_id")
+
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "geo_id")
 	private GeoCode geo;
-	
-	
-	
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getStreet() {
 		return street;
 	}
+
 	public void setStreet(String street) {
 		this.street = street;
 	}
+
 	public String getSuite() {
 		return suite;
 	}
+
 	public void setSuite(String suite) {
 		this.suite = suite;
 	}
+
 	public String getCity() {
 		return city;
 	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	public String getZipcode() {
 		return zipcode;
 	}
+
 	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
+
 	public GeoCode getGeo() {
 		return geo;
 	}
+
 	public void setGeo(GeoCode geo) {
 		this.geo = geo;
 	}
-	
-	
+
 }

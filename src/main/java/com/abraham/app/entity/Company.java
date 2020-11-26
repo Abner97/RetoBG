@@ -10,47 +10,51 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="companies")
+@Table(name = "companies")
 public class Company implements Serializable {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -8105784692694599261L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(length = 50,nullable=false)
+
+	@Column(length = 50, nullable = false)
 	private String name;
-	
-	@Column(length = 50,nullable=true)
+
+	@Column(length = 50, nullable = true)
 	private String catchPhrase;
 	private String bs;
-	
-	
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getCatchPhrase() {
 		return catchPhrase;
 	}
+
 	public void setCatchPhrase(String catchPhrase) {
 		this.catchPhrase = catchPhrase;
 	}
+
 	public String getBs() {
 		return bs;
 	}
+
 	public void setBs(String bs) {
 		this.bs = bs;
 	}
-	
-	
+
 }

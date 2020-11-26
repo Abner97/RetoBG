@@ -2,7 +2,7 @@
 
 Me tome el tiempo de mejorar la seguridad de la API con JWT.
 *Solo se puede usar con un software de API testing como Postman *
-
+*La copia de datos de la BD modificada para funcionar con JWT está en la carpeta /resources de esta branch. *
 Para hacer login deber acceder a:
 
 # Login

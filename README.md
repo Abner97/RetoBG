@@ -19,6 +19,7 @@ En el archivo application.properties que se encuentra en la carpeta /resources d
 
 
 spring.datasource.username=bg -> usuario de la BD
+
 spring.datasource.password=retobg2020 -> password de la BD
 
 Para hacer login deber acceder a:

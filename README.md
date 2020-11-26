@@ -1,6 +1,6 @@
 # RetoBG 
 
-
+![BG](https://lh3.googleusercontent.com/proxy/UpGiCcNIQnqSO1_RuU2bytKt1-CSfXKKsVfZKUGa7mRxbWw_3pr5rOp0qSiR-BEkUbej53wPxI9P16L1lrFP2tAdEP8oQgNxV2JMmgjhd_cS3E6r_K1LjJXltZje)
 
 *La copia de datos de la BD está en la carpeta /resources de esta branch. *
 
@@ -20,7 +20,7 @@ Ejemplo:
 
     localhost:8080/api/v1/users/27
 
-## Crear usuario común y corriente 
+## Crear usuario 
 
 ###  POST
 #### localhost:8080/api/v1/users
